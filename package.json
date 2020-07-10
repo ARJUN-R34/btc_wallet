@@ -1,0 +1,32 @@
+{
+  "name": "bitcoin-integration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm-run-all --silent test-*",
+    "test-audit": "npm audit --audit-level=moderate",
+    "test-lint": "eslint ./src/**/*.js"
+  },
+  "author": "ARJUN SASIKUMAR",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-filenames": "^1.3.2",
+    "eslint-plugin-import": "^2.22.0",
+    "mocha": "^8.0.1",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "bitcoinjs-lib": "^5.1.10",
+    "bitcore-insight": "^1.0.1",
+    "bitcore-lib": "^8.20.5",
+    "bs58": "^4.0.1",
+    "elliptic": "^6.5.3",
+    "js-sha256": "^0.9.0",
+    "ripemd160": "^2.0.2",
+    "secure-random": "^1.1.2"
+  }
+}
