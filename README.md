@@ -25,9 +25,9 @@ Import this package using,
 
 ##### Response
 
-```privateKey```
-```publicKey```
-```address```
+- ```privateKey``` - Private Key of the wallet.
+- ```publicKey``` - Public Key of the wallet.
+- ```address``` - Address of the wallet.
 
 #### Generate BECH32 Wallet
 
@@ -35,10 +35,10 @@ Import this package using,
 
 ##### Response
 
-```privateKey```
-```publicKey```
-```privateKeyWIF```
-```address```
+- ```privateKey``` - Private Key of the wallet.
+- ```publicKey``` - Public Key of the wallet.
+- ```privateKeyWIF``` - Private key in WIF (Wallet Import Format).
+- ```address``` - Address of the wallet.
 
 #### Generate Bitcoin Test Wallet
 
@@ -46,14 +46,21 @@ Import this package using,
 
 ##### Response
 
-```private```
-```public```
-```address```
-```wif```
+- ```private``` - Private Key of the wallet.
+- ```public``` - Public Key of the wallet.
+- ```address``` - Address of the wallet.
+- ```wif``` - Private key in WIF (Wallet Import Format).
 
 #### Bitcoin Transaction (Testnet)
 
 ```const btcTx = bitcoin.signAndSendTransaction({ fromAddress, toAddress, value, privateKeyWIF });```
+
+##### Parameters
+
+- ```fromAddress``` - Address of the wallet to send the transaction from (sender).
+- ```toAddress``` - Address of the wallet to send the transaction to (recepient).
+- ```value``` - Amount of Bitcoins (in satoshis).
+- ```privateKeyWIF``` - Private key of the sender in WIF (Wallet Import Format).
 
 #### Success Response
 
